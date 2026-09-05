@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/malikov.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Malikov Drinks | Crafting Extraordinary Cocktails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Malikov Drinks home">
+        <img src="/images/malikov.png" alt="Malikov" width="58" height="58" />
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link is-active" href="#home" data-nav>HOME</a>
+        <a class="nav-link" href="#cocktails" data-nav>COCKTAILS</a>
+        <a class="nav-link" href="#about" data-nav>ABOUT</a>
+        <a class="nav-link" href="#experience" data-nav>EXPERIENCE</a>
+        <a class="nav-link" href="#gallery" data-nav>GALLERY</a>
+        <a class="nav-link" href="#events" data-nav>EVENTS</a>
+        <a class="nav-link" href="#contact" data-nav>CONTACT</a>
+        <a class="btn btn-gold nav-book" href="#contact">BOOK NOW</a>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          class="social-link"
+          href="https://instagram.com/malikov.drinks"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a
+          class="social-link"
+          href="https://www.youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+        >
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="2.5" y="6" width="19" height="12" rx="3.2" />
+            <path d="M10.5 9.8v4.4L15 12z" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a class="btn btn-outline-white" href="#contact">BOOK NOW</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+          <img src="/images/hero.jpg" alt="" />
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">MIXOLOGY. CRAFT. EXPERIENCE.</p>
+            <h1>MALIKOV<br />DRINKS</h1>
+            <p class="hero-lead">
+              Crafting unique cocktails that tell a story. Turning every drink
+              into an unforgettable experience.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#cocktails">
+                EXPLORE COCKTAILS
+                <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 6l5 5 5-5" />
+                </svg>
+              </a>
+              <a class="btn btn-outline-red" href="#contact">BOOK MALIKOV</a>
+            </div>
+            <div class="social-proof">
+              <div class="avatars">
+                <img src="/images/avatar-1.jpg" alt="" />
+                <img src="/images/avatar-2.jpg" alt="" />
+                <img src="/images/avatar-3.jpg" alt="" />
+                <img src="/images/avatar-4.jpg" alt="" />
+              </div>
+              <p>
+                <span>5K+ FOLLOWERS ON INSTAGRAM</span>
+                <a href="https://instagram.com/malikov.drinks" target="_blank" rel="noopener noreferrer">@malikov.drinks</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-signature">
+            <p class="signature">Malikov</p>
+            <p class="signature-role">PROFESSIONAL MIXOLOGIST / COCKTAIL CREATOR</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cocktails" id="cocktails">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-title-wrap">
+              <svg class="crown" viewBox="0 0 24 16" width="22" height="14" aria-hidden="true">
+                <path d="M2 14h20L19 5l-5 5L12 2 10 10 5 5 2 14z" fill="#8B3030" />
+              </svg>
+              <h2>SIGNATURE COCKTAILS</h2>
+            </div>
+            <a class="text-link" href="#cocktails">VIEW ALL COCKTAILS &rarr;</a>
+          </div>
+
+          <div class="carousel">
+            <button class="carousel-btn prev" type="button" aria-label="Previous cocktails">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M10 3L5 8l5 5" />
+              </svg>
+            </button>
+
+            <div class="cocktail-track" data-track>
+              <article class="cocktail-card">
+                <div class="card-image">
+                  <img src="/images/tropical-crown.jpg" alt="Tropical Crown cocktail" />
+                </div>
+                <h3>TROPICAL CROWN</h3>
+                <p>Rum • Passion Fruit • Lime</p>
+                <div class="tags">
+                  <span>Tropical</span>
+                  <span>Refreshing</span>
+                </div>
+              </article>
+
+              <article class="cocktail-card">
+                <div class="card-image">
+                  <img src="/images/smoked-negroni.jpg" alt="Smoked Negroni cocktail" />
+                </div>
+                <h3>SMOKED NEGRONI</h3>
+                <p>Gin • Campari • Vermouth</p>
+                <div class="tags">
+                  <span>Bitter</span>
+                  <span>Smoky</span>
+                </div>
+              </article>
+
+              <article class="cocktail-card">
+                <div class="card-image">
+                  <img src="/images/cucumber-collins.jpg" alt="Cucumber Collins cocktail" />
+                </div>
+                <h3>CUCUMBER COLLINS</h3>
+                <p>Gin • Cucumber • Soda</p>
+                <div class="tags">
+                  <span>Fresh</span>
+                  <span>Crisp</span>
+                </div>
+              </article>
+
+              <article class="cocktail-card">
+                <div class="card-image">
+                  <img src="/images/midnight-espresso.jpg" alt="Midnight Espresso cocktail" />
+                </div>
+                <h3>MIDNIGHT ESPRESSO</h3>
+                <p>Vodka • Espresso • Coffee Liqueur</p>
+                <div class="tags">
+                  <span>Strong</span>
+                  <span>Bold</span>
+                </div>
+              </article>
+            </div>
+
+            <button class="carousel-btn next" type="button" aria-label="Next cocktails">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M6 3l5 5-5 5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-grid">
+          <figure class="about-portrait">
+            <img src="/images/about-portrait.jpg" alt="Malikov pouring a signature cocktail" />
+          </figure>
+
+          <div class="about-copy" id="experience">
+            <p class="eyebrow">ABOUT MALIKOV</p>
+            <h2>MORE THAN COCKTAILS.<br />IT'S A CRAFT.</h2>
+            <p>
+              Malikov is a professional mixologist dedicated to the art of cocktail
+              creation. With years of experience behind the bar and on stage, he
+              transforms every gathering into a sensory performance — where flavor,
+              technique, and atmosphere become one.
+            </p>
+            <p>
+              From intimate private dinners to large-scale brand activations, each
+              drink is built with precision, originality, and a signature sense of
+              theatre. Every glass is a story. Every event, an experience.
+            </p>
+            <div class="stats">
+              <div>
+                <strong>6+</strong>
+                <span>YEARS OF EXPERIENCE</span>
+              </div>
+              <div>
+                <strong>300+</strong>
+                <span>EVENTS COMPLETED</span>
+              </div>
+              <div>
+                <strong>50+</strong>
+                <span>SIGNATURE COCKTAILS</span>
+              </div>
+              <div>
+                <strong>15+</strong>
+                <span>BRANDS &amp; COLLABORATIONS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="craft">
+            <p class="eyebrow">THE CRAFT</p>
+            <ul class="craft-grid">
+              <li>
+                <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.3">
+                  <path d="M9 6h14l-3 10H12L9 6z" />
+                  <path d="M12 16v8h8v-8" />
+                  <path d="M11 28h10" />
+                </svg>
+                <div>
+                  <h3>MIXOLOGY</h3>
+                  <p>Classic and contemporary techniques executed with precision.</p>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.3">
+                  <path d="M8 6h16l-6 12v6" />
+                  <path d="M13 24h6M12 27h8" />
+                </svg>
+                <div>
+                  <h3>COCKTAIL CREATION</h3>
+                  <p>Original signatures designed around a story and a mood.</p>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.3">
+                  <path d="M16 4v10" />
+                  <path d="M13 6h6" />
+                  <path d="M12 14h8l-1 12H13L12 14z" />
+                  <circle cx="16" cy="21" r="2" />
+                </svg>
+                <div>
+                  <h3>INFUSIONS</h3>
+                  <p>House-made spirits, syrups, and botanical extracts.</p>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.3">
+                  <path d="M7 25l8-9 4 4 6-11" />
+                  <path d="M21 9h4v4" />
+                </svg>
+                <div>
+                  <h3>FLAIR</h3>
+                  <p>Performance bartending that turns service into spectacle.</p>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.3">
+                  <path d="M16 26c6-6 8-11 8-15a8 8 0 10-16 0c0 4 2 9 8 15z" />
+                  <circle cx="16" cy="11" r="2" />
+                </svg>
+                <div>
+                  <h3>GARNISHING</h3>
+                  <p>Fine details that complete the glass and the moment.</p>
+                </div>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.3">
+                  <path d="M16 5v4M16 23v4M5 16h4M23 16h4M8.5 8.5l2.5 2.5M21 21l2.5 2.5M23.5 8.5L21 11M11 21l-2.5 2.5" />
+                  <circle cx="16" cy="16" r="3.5" />
+                </svg>
+                <div>
+                  <h3>EXPERIENCES</h3>
+                  <p>Immersive tasting journeys for guests and brands.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="gallery-head">
+            <h2>GALLERY</h2>
+            <a class="text-link" href="#gallery">VIEW FULL GALLERY &rarr;</a>
+          </div>
+          <div class="gallery-grid">
+            <img src="/images/gallery-1.jpg" alt="Signature cocktail in low light" />
+            <img src="/images/gallery-2.jpg" alt="Tropical cocktail with garnish" />
+            <img src="/images/gallery-3.jpg" alt="Cocktail preparation close-up" />
+            <img src="/images/gallery-4.jpg" alt="Passion fruit cocktail" />
+            <img src="/images/gallery-5.jpg" alt="Mixologist at work" />
+            <img src="/images/gallery-6.jpg" alt="Dark cocktail with citrus" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="/images/malikov.png" alt="Malikov" width="92" height="92" />
+          <h2>LET'S CREATE SOMETHING EXTRAORDINARY.</h2>
+        </div>
+
+        <div class="footer-list" id="events">
+          <p class="eyebrow">AVAILABLE FOR</p>
+          <ul>
+            <li><span class="check" aria-hidden="true"></span>Private Events</li>
+            <li><span class="check" aria-hidden="true"></span>Weddings</li>
+            <li><span class="check" aria-hidden="true"></span>Corporate Events</li>
+            <li><span class="check" aria-hidden="true"></span>Bar Collaborations</li>
+            <li><span class="check" aria-hidden="true"></span>Brand Activations</li>
+            <li><span class="check" aria-hidden="true"></span>Cocktail Experiences</li>
+          </ul>
+        </div>
+
+        <div class="footer-book">
+          <p class="eyebrow">BOOK MALIKOV</p>
+          <a href="https://wa.me/21693154446">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M6 4h3l2 5-2 1.5a12 12 0 006 6L16.5 15l5 2v3a2 2 0 01-2 2A16 16 0 014 6a2 2 0 012-2z" />
+            </svg>
+            +216 93 154 446
+          </a>
+          <a href="https://instagram.com/malikov.drinks" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+            </svg>
+            @malikov.drinks
+          </a>
+          <a href="mailto:malikov.drinks@gmail.com">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M4 7l8 6 8-6" />
+            </svg>
+            malikov.drinks@gmail.com
+          </a>
+        </div>
+      </div>
+      <p class="copyright">© 2024 Malikov Drinks. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
