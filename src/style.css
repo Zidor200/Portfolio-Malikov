@@ -11,9 +11,9 @@
   --line: rgba(255, 255, 255, 0.14);
   --serif: 'Playfair Display', Georgia, serif;
   --sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-  --script: 'Great Vibes', cursive;
   --container: 1240px;
   --pad: 56px;
+  --header-h: 110px;
 }
 
 * {
@@ -149,14 +149,24 @@ ul {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 24px;
-  height: 78px;
+  height: var(--header-h);
   padding: 0 var(--pad);
+  background: linear-gradient(
+    180deg,
+    #000 0%,
+    rgba(0, 0, 0, 0.82) 28%,
+    rgba(0, 0, 0, 0.28) 62%,
+    transparent 100%
+  );
+}
+
+.site-header:has(.nav.is-open) {
   background: #000;
 }
 
 .logo img {
-  width: 58px;
-  height: 58px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -244,7 +254,8 @@ ul {
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 78px);
+  min-height: 100vh;
+  margin-top: calc(var(--header-h) * -1);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -260,7 +271,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 78% 42%;
+  object-position: 70% 22%;
   filter: saturate(0.95) contrast(1.12) brightness(0.68);
 }
 
@@ -277,7 +288,7 @@ ul {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 72px 0 120px;
+  padding: calc(var(--header-h) + 28px) 0 120px;
 }
 
 @media (min-width: 641px) {
@@ -293,6 +304,12 @@ ul {
 
 .hero-copy {
   max-width: 560px;
+}
+
+@media (min-width: 981px) {
+  .hero-copy {
+    padding-left: clamp(160px, 16vw, 280px);
+  }
 }
 
 .hero h1 {
@@ -318,6 +335,12 @@ ul {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 32px;
+}
+
+.hero-actions .btn {
+  width: 80%;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .social-proof {
@@ -355,28 +378,6 @@ ul {
 .social-proof a {
   color: var(--red-bright);
   font-weight: 500;
-}
-
-.hero-signature {
-  position: absolute;
-  right: var(--pad);
-  bottom: 42px;
-  z-index: 1;
-  text-align: right;
-}
-
-.signature {
-  color: var(--gold);
-  font-family: var(--script);
-  font-size: 64px;
-  line-height: 0.8;
-}
-
-.signature-role {
-  margin-top: 8px;
-  color: #d7d7d7;
-  font-size: 9px;
-  letter-spacing: 0.22em;
 }
 
 .cocktails {
@@ -425,6 +426,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
+}
+
+.cocktail-track > .cocktail-card:nth-child(n + 5) {
+  display: none;
 }
 
 .cocktail-card h3 {
@@ -599,6 +604,125 @@ ul {
   line-height: 1.5;
 }
 
+.philosophy {
+  margin: 0 0 18px;
+  padding: 0 0 0 16px;
+  border-left: 1.5px solid var(--gold);
+}
+
+.philosophy p {
+  color: #f2f2f2;
+  font-family: var(--serif);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.experience {
+  padding: 10px 0 90px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.7fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.timeline {
+  display: grid;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid var(--line);
+}
+
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 20px;
+  padding-left: 22px;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.timeline-dates {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.timeline h3 {
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.timeline-role {
+  margin: 4px 0 10px;
+  color: var(--red-bright);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.timeline p:not(.timeline-dates):not(.timeline-role) {
+  color: #e6e6e6;
+  font-size: 13.5px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.credentials {
+  display: grid;
+  gap: 32px;
+  padding: 28px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.credentials h3 {
+  margin: 14px 0 6px;
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.credentials p {
+  color: #cfcfcf;
+  font-size: 12.5px;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.credentials ul {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.credentials li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #eee;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .gallery {
   padding: 10px 0 90px;
 }
@@ -668,6 +792,15 @@ ul {
   margin-top: 16px;
 }
 
+.footer-note {
+  margin-top: 12px;
+  max-width: 280px;
+  color: #b8b8b8;
+  font-size: 12.5px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
 .footer-list li {
   display: flex;
   align-items: center;
@@ -705,6 +838,12 @@ ul {
   color: var(--gold);
 }
 
+.footer-meta {
+  color: #b8b8b8;
+  font-size: 12.5px;
+  font-weight: 300;
+}
+
 .copyright {
   margin-top: 56px;
   color: #6d6d6d;
@@ -730,12 +869,20 @@ ul {
     grid-template-columns: 220px 1fr 260px;
     gap: 32px;
   }
+
+  .experience-grid {
+    gap: 36px;
+  }
 }
 
 @media (max-width: 980px) {
+  :root {
+    --header-h: 96px;
+  }
+
   .site-header {
     grid-template-columns: 1fr auto;
-    height: 72px;
+    height: var(--header-h);
     padding-top: env(safe-area-inset-top);
   }
 
@@ -759,7 +906,7 @@ ul {
 
   .nav.is-open {
     position: fixed;
-    top: calc(72px + env(safe-area-inset-top));
+    top: var(--header-h);
     left: 0;
     right: 0;
     bottom: 0;
@@ -796,7 +943,12 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .cocktail-track > .cocktail-card:nth-child(n + 3) {
+    display: none;
+  }
+
   .about-grid,
+  .experience-grid,
   .footer-grid,
   .gallery-grid {
     grid-template-columns: 1fr 1fr;
@@ -817,11 +969,16 @@ ul {
   .footer-brand {
     grid-column: 1 / -1;
   }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
   :root {
     --pad: 18px;
+    --header-h: 88px;
   }
 
   body.menu-open {
@@ -829,14 +986,14 @@ ul {
   }
 
   .site-header {
-    height: 64px;
+    height: var(--header-h);
     padding: env(safe-area-inset-top) max(18px, env(safe-area-inset-right)) 0 max(18px, env(safe-area-inset-left));
     gap: 12px;
   }
 
   .logo img {
-    width: 46px;
-    height: 46px;
+    width: 64px;
+    height: 64px;
   }
 
   .header-actions {
@@ -848,7 +1005,7 @@ ul {
   }
 
   .nav.is-open {
-    top: calc(64px + env(safe-area-inset-top));
+    top: var(--header-h);
   }
 
   .eyebrow,
@@ -858,13 +1015,13 @@ ul {
   }
 
   .hero {
-    min-height: calc(100dvh - 64px - env(safe-area-inset-top));
-    max-height: calc(100dvh - 64px - env(safe-area-inset-top));
+    min-height: 100dvh;
+    max-height: 100dvh;
     align-items: stretch;
   }
 
   .hero-media img {
-    object-position: 68% 22%;
+    object-position: 50% 18%;
   }
 
   .hero-media::after {
@@ -900,17 +1057,18 @@ ul {
 
   .hero-actions {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 8px;
     margin-top: 16px;
   }
 
   .hero-actions .btn {
-    width: 100%;
+    width: 80%;
     min-height: 42px;
-    padding: 0 8px;
+    padding: 0 12px;
     font-size: 10px;
     letter-spacing: 0.1em;
+    border-radius: 999px;
   }
 
   .social-proof {
@@ -923,24 +1081,9 @@ ul {
     font-size: 9px;
   }
 
-  .hero-signature {
-    position: static;
-    margin-top: 14px;
-    text-align: left;
-  }
-
-  .signature {
-    font-size: 34px;
-  }
-
-  .signature-role {
-    max-width: none;
-    letter-spacing: 0.1em;
-    line-height: 1.45;
-  }
-
   .cocktails,
   .about,
+  .experience,
   .gallery {
     padding-top: 56px;
     padding-bottom: 56px;
@@ -987,6 +1130,10 @@ ul {
     scrollbar-width: none;
   }
 
+  .cocktail-track > .cocktail-card:nth-child(n + 3) {
+    display: block;
+  }
+
   .cocktail-track::-webkit-scrollbar {
     display: none;
   }
@@ -997,10 +1144,20 @@ ul {
   }
 
   .about-grid,
+  .experience-grid,
   .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .credentials {
+    padding: 22px 18px;
   }
 
   .about-portrait img {
@@ -1105,12 +1262,7 @@ ul {
   }
 
   .hero-actions,
-  .social-proof,
-  .hero-signature {
+  .social-proof {
     margin-top: 10px;
-  }
-
-  .signature {
-    font-size: 28px;
   }
 }

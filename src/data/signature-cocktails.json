@@ -1,0 +1,105 @@
+{
+  "signatureCocktails": [
+    {
+      "id": "midnight-colada",
+      "name": "MIDNIGHT COLADA",
+      "image": "MIDNIGHT COLADA-AI.jpg",
+      "ingredients": [
+        "Coconut Milk",
+        "Pineapple",
+        "Rum",
+        "Dark Chocolate",
+        "Chocolate Bitters"
+      ],
+      "profile": ["Creamy", "Tropical", "Cocoa", "Rich"],
+      "description": "An indulgent tropical creation where coconut and pineapple meet deep dark chocolate and aromatic cocoa bitters."
+    },
+    {
+      "id": "mango-fuego",
+      "name": "MANGO FUEGO",
+      "image": "MANGO FUEGO-AI.jpg",
+      "ingredients": [
+        "Chili-Infused Tequila",
+        "Orange Liqueur",
+        "Lemon",
+        "Mango Purée"
+      ],
+      "profile": ["Tropical", "Spicy", "Citrusy", "Bold"],
+      "description": "Ripe mango and bright citrus meet chili-infused tequila for a vibrant, spicy finish."
+    },
+    {
+      "id": "hibiscus-velvet",
+      "name": "HIBISCUS VELVET",
+      "image": "HIBISCUS VELVET-ai.jpg",
+      "ingredients": [
+        "Hibiscus",
+        "Raspberry",
+        "Vanilla",
+        "Orange",
+        "Vodka",
+        "Triple Sec"
+      ],
+      "profile": ["Floral", "Fruity", "Silky", "Citrus"],
+      "description": "Hibiscus and raspberry layered with soft vanilla and bright orange, lifted by vodka and triple sec."
+    },
+    {
+      "id": "midnight-grove",
+      "name": "MIDNIGHT GROVE",
+      "image": "MIDNIGHT GROVE-ai.jpg",
+      "ingredients": [
+        "White Rum",
+        "Blueberry",
+        "Fresh Basil",
+        "Lemon",
+        "Ginger Syrup"
+      ],
+      "profile": ["Berry", "Herbal", "Citrus", "Spiced", "Fresh"],
+      "description": "A deep, aromatic composition of blueberry and fresh basil, lifted by citrus and a subtle ginger warmth over white rum."
+    },
+    {
+      "id": "golden-meridian",
+      "name": "GOLDEN MERIDIAN",
+      "image": "GOLDEN MERIDIAN-ai.jpg",
+      "ingredients": [
+        "Tequila",
+        "Rum",
+        "Yuzu",
+        "Pineapple",
+        "Ginger"
+      ],
+      "profile": ["Citrus", "Tropical", "Spiced", "Bright", "Silky"],
+      "description": "A luminous composition of tequila and rum, sharpened with yuzu and ginger, then rounded by tropical pineapple."
+    },
+    {
+      "id": "solar-eclipse",
+      "name": "SOLAR ECLIPSE",
+      "image": "SOLAR ECLIPSE-AI.jpg",
+      "ingredients": [
+        "Vodka",
+        "Triple Sec",
+        "Passion Fruit",
+        "Orange",
+        "Lemon",
+        "Grenadine"
+      ],
+      "profile": ["Citrus", "Tropical", "Fruity", "Bright", "Balanced"],
+      "description": "A vibrant composition of passion fruit and citrus, layered with grenadine for a refined balance of brightness, sweetness and depth."
+    },
+    {
+      "id": "royal-nocturne",
+      "name": "ROYAL NOCTURNE",
+      "image": "ROYAL NOCTURNE-AI.jpg",
+      "ingredients": [
+        "Saffron",
+        "Pistachio Bitter",
+        "Blueberry",
+        "Raspberry",
+        "Lemon",
+        "Ginger",
+        "Cream"
+      ],
+      "profile": ["Fruity", "Spiced", "Floral", "Rich", "Velvety"],
+      "description": "An opulent composition of dark berries, saffron and pistachio, lifted by citrus and ginger."
+    }
+  ]
+}
