@@ -65,9 +65,6 @@ const renderCocktails = () => {
       const title = document.createElement('h3')
       title.textContent = cocktail.name
 
-      const ingredients = document.createElement('p')
-      ingredients.textContent = cocktail.ingredients.slice(0, 3).join(' • ')
-
       const tags = document.createElement('div')
       tags.className = 'tags'
       cocktail.profile.slice(0, 2).forEach((tag) => {
@@ -76,7 +73,13 @@ const renderCocktails = () => {
         tags.append(span)
       })
 
-      article.append(imageWrap, title, ingredients, tags)
+      if (cocktail.ingredients.length) {
+        const ingredients = document.createElement('p')
+        ingredients.textContent = cocktail.ingredients.slice(0, 3).join(' • ')
+        article.append(imageWrap, title, ingredients, tags)
+      } else {
+        article.append(imageWrap, title, tags)
+      }
       return article
     }),
   )

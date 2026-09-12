@@ -3,7 +3,7 @@
     {
       "id": "midnight-colada",
       "name": "MIDNIGHT COLADA",
-      "image": "MIDNIGHT COLADA-AI.jpg",
+      "image": "S-MIDNIGHT COLADA.jpeg",
       "ingredients": [
         "Coconut Milk",
         "Pineapple",
@@ -17,7 +17,7 @@
     {
       "id": "mango-fuego",
       "name": "MANGO FUEGO",
-      "image": "MANGO FUEGO-AI.jpg",
+      "image": "S-MANGO FUEGO.jpeg",
       "ingredients": [
         "Chili-Infused Tequila",
         "Orange Liqueur",
@@ -30,7 +30,7 @@
     {
       "id": "hibiscus-velvet",
       "name": "HIBISCUS VELVET",
-      "image": "HIBISCUS VELVET-ai.jpg",
+      "image": "S-HIBISCUS VELVET.jpeg",
       "ingredients": [
         "Hibiscus",
         "Raspberry",
@@ -45,7 +45,7 @@
     {
       "id": "midnight-grove",
       "name": "MIDNIGHT GROVE",
-      "image": "MIDNIGHT GROVE-ai.jpg",
+      "image": "S-MIDNIGHT GROVE.jpeg",
       "ingredients": [
         "White Rum",
         "Blueberry",
@@ -59,7 +59,7 @@
     {
       "id": "golden-meridian",
       "name": "GOLDEN MERIDIAN",
-      "image": "GOLDEN MERIDIAN-ai.jpg",
+      "image": "S-GOLDEN MERIDIAN.jpeg",
       "ingredients": [
         "Tequila",
         "Rum",
@@ -73,7 +73,7 @@
     {
       "id": "solar-eclipse",
       "name": "SOLAR ECLIPSE",
-      "image": "SOLAR ECLIPSE-AI.jpg",
+      "image": "S-SOLAR ECLIPSE.jpeg",
       "ingredients": [
         "Vodka",
         "Triple Sec",
@@ -88,7 +88,7 @@
     {
       "id": "royal-nocturne",
       "name": "ROYAL NOCTURNE",
-      "image": "ROYAL NOCTURNE-AI.jpg",
+      "image": "S-ROYAL NOCTURNE.jpeg",
       "ingredients": [
         "Saffron",
         "Pistachio Bitter",
@@ -100,6 +100,14 @@
       ],
       "profile": ["Fruity", "Spiced", "Floral", "Rich", "Velvety"],
       "description": "An opulent composition of dark berries, saffron and pistachio, lifted by citrus and ginger."
+    },
+    {
+      "id": "noble-cask",
+      "name": "NOBLE CASK",
+      "image": "S-NOBLE CASK.jpeg",
+      "ingredients": [],
+      "profile": ["Signature", "Refined"],
+      "description": "An original signature from the Malikov collection."
     }
   ]
 }

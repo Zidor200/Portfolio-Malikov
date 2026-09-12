@@ -521,8 +521,8 @@ ul {
   width: 100%;
   height: 520px;
   object-fit: cover;
-  object-position: center 20%;
-  filter: brightness(0.78) contrast(1.1) saturate(0.85);
+  object-position: center 12%;
+  filter: brightness(1.02) contrast(1.06) saturate(0.92);
 }
 
 .about-copy h2 {
@@ -639,7 +639,7 @@ ul {
   border-left: 1px solid var(--line);
 }
 
-.timeline li {
+.timeline > li {
   position: relative;
   display: grid;
   grid-template-columns: 92px 1fr;
@@ -647,7 +647,7 @@ ul {
   padding-left: 22px;
 }
 
-.timeline li::before {
+.timeline > li::before {
   content: '';
   position: absolute;
   top: 6px;
@@ -684,6 +684,33 @@ ul {
   font-size: 13.5px;
   font-weight: 300;
   line-height: 1.75;
+}
+
+.duty-list {
+  display: grid;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.duty-list li {
+  display: grid;
+  grid-template-columns: 8px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding-left: 0;
+  color: #d8d8d8;
+  font-size: 12.5px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.duty-list li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: var(--gold);
 }
 
 .credentials {
@@ -723,6 +750,20 @@ ul {
   font-weight: 300;
 }
 
+.strength-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.credentials-note {
+  margin-top: 16px;
+  color: #9f9f9f;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
 .gallery {
   padding: 10px 0 90px;
 }
@@ -748,11 +789,23 @@ ul {
   gap: 10px;
 }
 
+.gallery-grid figure {
+  margin: 0;
+}
+
 .gallery-grid img {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   filter: brightness(0.82) contrast(1.08) saturate(0.88);
+}
+
+.gallery-grid figcaption {
+  margin-top: 8px;
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
 }
 
 .site-footer {
@@ -962,8 +1015,8 @@ ul {
     height: min(380px, 58vw);
   }
 
-  .gallery-grid img:nth-child(n + 5) {
-    display: none;
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer-brand {
@@ -1041,6 +1094,7 @@ ul {
 
   .hero-copy {
     max-width: none;
+    padding-left: calc(22px + env(safe-area-inset-left));
   }
 
   .hero h1 {
@@ -1151,7 +1205,7 @@ ul {
     gap: 28px;
   }
 
-  .timeline li {
+  .timeline > li {
     grid-template-columns: 1fr;
     gap: 6px;
   }
