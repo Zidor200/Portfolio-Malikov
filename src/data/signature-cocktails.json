@@ -1,9 +1,37 @@
 {
   "signatureCocktails": [
     {
+      "id": "galaxy",
+      "name": "GALAXY",
+      "image": "S-Galaxy.jpg",
+      "ingredients": [
+        "Blueberry Purée",
+        "Blue Curaçao",
+        "Passion Fruit",
+        "Pineapple Juice",
+        "Lemon",
+        "Rosemary-Infused Vodka"
+      ],
+      "profile": ["Berry", "Tropical", "Citrus", "Herbal"],
+      "description": "Blueberry purée and passion fruit over pineapple and lemon, lifted by blue curaçao and rosemary-infused vodka."
+    },
+    {
+      "id": "blue-hawaiian-clarifier",
+      "name": "BLUE HAWAIIAN CLARIFIER",
+      "image": "S-Blue Hawaiian clarifier.jpg",
+      "ingredients": [
+        "Blue Curaçao",
+        "Pineapple Juice",
+        "Coconut Milk",
+        "White Rum"
+      ],
+      "profile": ["Tropical", "Creamy", "Citrus"],
+      "description": "A clarified tropical serve of blue curaçao, pineapple, coconut milk and white rum."
+    },
+    {
       "id": "midnight-colada",
       "name": "MIDNIGHT COLADA",
-      "image": "S-MIDNIGHT COLADA.jpeg",
+      "image": "S-MIDNIGHT COLADA.jpg",
       "ingredients": [
         "Coconut Milk",
         "Pineapple",
@@ -17,7 +45,7 @@
     {
       "id": "mango-fuego",
       "name": "MANGO FUEGO",
-      "image": "S-MANGO FUEGO.jpeg",
+      "image": "S-MANGO FUEGO.jpg",
       "ingredients": [
         "Chili-Infused Tequila",
         "Orange Liqueur",
@@ -30,7 +58,7 @@
     {
       "id": "hibiscus-velvet",
       "name": "HIBISCUS VELVET",
-      "image": "S-HIBISCUS VELVET.jpeg",
+      "image": "S-HIBISCUS VELVET.jpg",
       "ingredients": [
         "Hibiscus",
         "Raspberry",
@@ -45,7 +73,7 @@
     {
       "id": "midnight-grove",
       "name": "MIDNIGHT GROVE",
-      "image": "S-MIDNIGHT GROVE.jpeg",
+      "image": "S-MIDNIGHT GROVE.jpg",
       "ingredients": [
         "White Rum",
         "Blueberry",
@@ -59,7 +87,7 @@
     {
       "id": "golden-meridian",
       "name": "GOLDEN MERIDIAN",
-      "image": "S-GOLDEN MERIDIAN.jpeg",
+      "image": "S-GOLDEN MERIDIAN.jpg",
       "ingredients": [
         "Tequila",
         "Rum",
@@ -73,7 +101,7 @@
     {
       "id": "solar-eclipse",
       "name": "SOLAR ECLIPSE",
-      "image": "S-SOLAR ECLIPSE.jpeg",
+      "image": "S-SOLAR ECLIPSE.jpg",
       "ingredients": [
         "Vodka",
         "Triple Sec",
@@ -88,7 +116,7 @@
     {
       "id": "royal-nocturne",
       "name": "ROYAL NOCTURNE",
-      "image": "S-ROYAL NOCTURNE.jpeg",
+      "image": "S-ROYAL NOCTURNE.jpg",
       "ingredients": [
         "Saffron",
         "Pistachio Bitter",
@@ -104,7 +132,7 @@
     {
       "id": "noble-cask",
       "name": "NOBLE CASK",
-      "image": "S-NOBLE CASK.jpeg",
+      "image": "S-NOBLE CASK.jpg",
       "ingredients": [],
       "profile": ["Signature", "Refined"],
       "description": "An original signature from the Malikov collection."

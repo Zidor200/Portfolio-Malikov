@@ -578,15 +578,7 @@ ul {
 }
 
 .craft-grid li {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-.craft-grid svg {
-  flex: 0 0 auto;
-  color: var(--gold);
-  margin-top: 2px;
+  min-width: 0;
 }
 
 .craft-grid h3 {
@@ -785,8 +777,8 @@ ul {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px 12px;
 }
 
 .gallery-grid figure {
@@ -1002,8 +994,7 @@ ul {
 
   .about-grid,
   .experience-grid,
-  .footer-grid,
-  .gallery-grid {
+  .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1013,10 +1004,6 @@ ul {
 
   .about-portrait img {
     height: min(380px, 58vw);
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer-brand {
@@ -1246,16 +1233,12 @@ ul {
 
   .gallery-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 8px;
   }
 
   .gallery-grid img {
     height: auto;
-  }
-
-  .gallery-grid img:nth-child(n + 5) {
-    display: block;
   }
 
   .site-footer {

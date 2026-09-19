@@ -1,0 +1,19 @@
+{
+  "cocktails": [
+    { "name": "AFFOGATO MARTINI", "image": "Affogato  Martini.jpg" },
+    { "name": "APÉROL SOUR", "image": "Apérol sour.jpg" },
+    { "name": "APÉROL SPRITZ", "image": "Apérol spritz.jpg" },
+    { "name": "CARTHAGE ROSE", "image": "CARTHAGE ROSE.jpeg" },
+    { "name": "CRIMSON VEIL", "image": "CRIMSON VEIL.jpeg" },
+    { "name": "EXPRESSO MARTINI", "image": "Expresso martini.jpg" },
+    { "name": "GILDED PETAL", "image": "GILDED PETAL.jpeg" },
+    { "name": "GIN BASILIC SMASH", "image": "Gin Basilic smash.jpg" },
+    { "name": "GOLDEN RITUAL", "image": "GOLDEN RITUAL.jpeg" },
+    { "name": "HUGO SPRITZ", "image": "Hugo spritz.jpg" },
+    { "name": "LIMONCELLO SPRITZ", "image": "Limoncello spritz.jpg" },
+    { "name": "NEGRONI", "image": "NEGRONI.jpg" },
+    { "name": "PINA COLADA", "image": "Pina colada.jpg" },
+    { "name": "RUBY AGAVE", "image": "RUBY AGAVE.jpeg" },
+    { "name": "VELVET BLOOM", "image": "VELVET BLOOM.jpeg" }
+  ]
+}

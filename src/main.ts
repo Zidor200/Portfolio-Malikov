@@ -1,5 +1,6 @@
 import './style.css'
 import cocktailData from './data/signature-cocktails.json' with { type: 'json' }
+import galleryData from './data/gallery-cocktails.json' with { type: 'json' }
 
 const nav = document.querySelector<HTMLElement>('.nav')
 const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle')
@@ -97,3 +98,27 @@ const rotate = (direction: number) => {
 renderCocktails()
 prev?.addEventListener('click', () => rotate(-1))
 next?.addEventListener('click', () => rotate(1))
+
+const gallery = document.querySelector<HTMLElement>('[data-gallery]')
+
+const renderGallery = () => {
+  if (!gallery) return
+
+  gallery.replaceChildren(
+    ...galleryData.cocktails.map((cocktail) => {
+      const figure = document.createElement('figure')
+
+      const img = document.createElement('img')
+      img.src = `/matrials/${encodeURIComponent(cocktail.image)}`
+      img.alt = `${cocktail.name} cocktail`
+
+      const caption = document.createElement('figcaption')
+      caption.textContent = cocktail.name
+
+      figure.append(img, caption)
+      return figure
+    }),
+  )
+}
+
+renderGallery()
