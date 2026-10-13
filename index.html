@@ -65,7 +65,10 @@
     <main>
       <section class="hero" id="home">
         <div class="hero-media" aria-hidden="true">
-          <img src="/matrials/malik2.jpeg" alt="" />
+          <picture>
+            <source media="(max-width: 640px)" srcset="/matrials/malik1.jpg" />
+            <img src="/matrials/malik2.jpg" alt="" />
+          </picture>
         </div>
 
         <div class="container hero-inner">
@@ -84,18 +87,14 @@
                 </svg>
               </a>
             </div>
-            <div class="social-proof">
-              <div class="avatars">
-                <img src="/images/avatar-1.jpg" alt="" />
-                <img src="/images/avatar-2.jpg" alt="" />
-                <img src="/images/avatar-3.jpg" alt="" />
-                <img src="/images/avatar-4.jpg" alt="" />
-              </div>
-              <p>
-                <span>5K+ FOLLOWERS ON INSTAGRAM</span>
-                <a href="https://www.instagram.com/malikov.drinks" target="_blank" rel="noopener noreferrer">@malikov.drinks</a>
-              </p>
-            </div>
+            <a class="social-proof" href="https://www.instagram.com/malikov.drinks" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @malikov.drinks">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
+              </svg>
+              <span>@malikov.drinks</span>
+            </a>
           </div>
         </div>
       </section>
@@ -109,7 +108,7 @@
               </svg>
               <h2>SIGNATURE COCKTAILS</h2>
             </div>
-            <a class="text-link" href="#cocktails">VIEW ALL COCKTAILS &rarr;</a>
+            <a class="text-link" href="#cocktails" data-open-banner>VIEW ALL COCKTAILS &rarr;</a>
           </div>
 
           <div class="carousel">
@@ -133,7 +132,7 @@
       <section class="about" id="about">
         <div class="container about-grid">
           <figure class="about-portrait">
-            <img src="/matrials/malik1.jpeg" alt="Malik Khouaja — Malikov" />
+            <img src="/matrials/malik1.jpg" alt="Malik Khouaja — Malikov" />
           </figure>
 
           <div class="about-copy">
@@ -372,6 +371,66 @@
       </div>
       <p class="copyright">© 2026 Tanix Solutions. All rights reserved.</p>
     </footer>
+
+    <div class="cocktail-banner" data-banner hidden>
+      <div class="cocktail-banner__scrim" data-banner-close></div>
+      <div
+        class="cocktail-banner__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="banner-title"
+        tabindex="-1"
+      >
+        <button class="cocktail-banner__close" type="button" data-banner-close aria-label="Close cocktail details">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M3 3l10 10M13 3L3 13" />
+          </svg>
+        </button>
+
+        <div class="cocktail-banner__layout">
+          <div class="cocktail-banner__media">
+            <img data-banner-image alt="" />
+            <button class="cocktail-banner__nav prev" type="button" data-banner-prev aria-label="Previous cocktail">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M10 3L5 8l5 5" />
+              </svg>
+            </button>
+            <button class="cocktail-banner__nav next" type="button" data-banner-next aria-label="Next cocktail">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M6 3l5 5-5 5" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="cocktail-banner__details">
+            <p class="eyebrow">Signature cocktail</p>
+            <h3 id="banner-title" data-banner-title></h3>
+            <p class="cocktail-banner__copy" data-banner-description></p>
+
+            <dl class="cocktail-banner__meta">
+              <div>
+                <dt>Glass</dt>
+                <dd data-banner-glass></dd>
+              </div>
+              <div>
+                <dt>Garnish</dt>
+                <dd data-banner-garnish></dd>
+              </div>
+              <div>
+                <dt>Serve</dt>
+                <dd data-banner-serve></dd>
+              </div>
+            </dl>
+
+            <h4>Ingredients</h4>
+            <ul class="cocktail-banner__ingredients" data-banner-ingredients></ul>
+            <div class="tags" data-banner-tags></div>
+          </div>
+        </div>
+
+        <div class="cocktail-banner__thumbs" data-banner-thumbs></div>
+      </div>
+    </div>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

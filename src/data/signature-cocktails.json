@@ -13,7 +13,10 @@
         "Rosemary-Infused Vodka"
       ],
       "profile": ["Berry", "Tropical", "Citrus", "Herbal"],
-      "description": "Blueberry purée and passion fruit over pineapple and lemon, lifted by blue curaçao and rosemary-infused vodka."
+      "description": "Blueberry purée and passion fruit over pineapple and lemon, lifted by blue curaçao and rosemary-infused vodka.",
+      "glass": "Coupe",
+      "garnish": "Fresh rosemary sprig",
+      "serve": "Shaken, served up"
     },
     {
       "id": "blue-hawaiian-clarifier",
@@ -26,7 +29,10 @@
         "White Rum"
       ],
       "profile": ["Tropical", "Creamy", "Citrus"],
-      "description": "A clarified tropical serve of blue curaçao, pineapple, coconut milk and white rum."
+      "description": "A clarified tropical serve of blue curaçao, pineapple, coconut milk and white rum.",
+      "glass": "Nick & Nora",
+      "garnish": "Dehydrated pineapple",
+      "serve": "Clarified, served ice-cold"
     },
     {
       "id": "midnight-colada",
@@ -40,7 +46,10 @@
         "Chocolate Bitters"
       ],
       "profile": ["Creamy", "Tropical", "Cocoa", "Rich"],
-      "description": "An indulgent tropical creation where coconut and pineapple meet deep dark chocolate and aromatic cocoa bitters."
+      "description": "An indulgent tropical creation where coconut and pineapple meet deep dark chocolate and aromatic cocoa bitters.",
+      "glass": "Rocks glass",
+      "garnish": "Dark chocolate shavings",
+      "serve": "Built over pebble ice"
     },
     {
       "id": "mango-fuego",
@@ -53,7 +62,10 @@
         "Mango Purée"
       ],
       "profile": ["Tropical", "Spicy", "Citrusy", "Bold"],
-      "description": "Ripe mango and bright citrus meet chili-infused tequila for a vibrant, spicy finish."
+      "description": "Ripe mango and bright citrus meet chili-infused tequila for a vibrant, spicy finish.",
+      "glass": "Coupe",
+      "garnish": "Chili oil & mango slice",
+      "serve": "Shaken, fine-strained"
     },
     {
       "id": "hibiscus-velvet",
@@ -68,7 +80,10 @@
         "Triple Sec"
       ],
       "profile": ["Floral", "Fruity", "Silky", "Citrus"],
-      "description": "Hibiscus and raspberry layered with soft vanilla and bright orange, lifted by vodka and triple sec."
+      "description": "Hibiscus and raspberry layered with soft vanilla and bright orange, lifted by vodka and triple sec.",
+      "glass": "Wine glass",
+      "garnish": "Hibiscus petal",
+      "serve": "Shaken, served long"
     },
     {
       "id": "midnight-grove",
@@ -82,7 +97,10 @@
         "Ginger Syrup"
       ],
       "profile": ["Berry", "Herbal", "Citrus", "Spiced", "Fresh"],
-      "description": "A deep, aromatic composition of blueberry and fresh basil, lifted by citrus and a subtle ginger warmth over white rum."
+      "description": "A deep, aromatic composition of blueberry and fresh basil, lifted by citrus and a subtle ginger warmth over white rum.",
+      "glass": "Highball",
+      "garnish": "Fresh basil leaf",
+      "serve": "Shaken, served over ice"
     },
     {
       "id": "golden-meridian",
@@ -96,7 +114,10 @@
         "Ginger"
       ],
       "profile": ["Citrus", "Tropical", "Spiced", "Bright", "Silky"],
-      "description": "A luminous composition of tequila and rum, sharpened with yuzu and ginger, then rounded by tropical pineapple."
+      "description": "A luminous composition of tequila and rum, sharpened with yuzu and ginger, then rounded by tropical pineapple.",
+      "glass": "Coupe",
+      "garnish": "Yuzu twist",
+      "serve": "Shaken, served up"
     },
     {
       "id": "solar-eclipse",
@@ -111,7 +132,10 @@
         "Grenadine"
       ],
       "profile": ["Citrus", "Tropical", "Fruity", "Bright", "Balanced"],
-      "description": "A vibrant composition of passion fruit and citrus, layered with grenadine for a refined balance of brightness, sweetness and depth."
+      "description": "A vibrant composition of passion fruit and citrus, layered with grenadine for a refined balance of brightness, sweetness and depth.",
+      "glass": "Martini glass",
+      "garnish": "Orange zest",
+      "serve": "Shaken, layered finish"
     },
     {
       "id": "royal-nocturne",
@@ -127,15 +151,132 @@
         "Cream"
       ],
       "profile": ["Fruity", "Spiced", "Floral", "Rich", "Velvety"],
-      "description": "An opulent composition of dark berries, saffron and pistachio, lifted by citrus and ginger."
+      "description": "An opulent composition of dark berries, saffron and pistachio, lifted by citrus and ginger.",
+      "glass": "Coupe",
+      "garnish": "Saffron threads",
+      "serve": "Shaken with cream, served up"
     },
     {
       "id": "noble-cask",
       "name": "NOBLE CASK",
       "image": "S-NOBLE CASK.jpg",
-      "ingredients": [],
-      "profile": ["Signature", "Refined"],
-      "description": "An original signature from the Malikov collection."
+      "ingredients": [
+        "Oak-aged Rum",
+        "Cognac",
+        "Maple",
+        "Orange Bitters",
+        "Walnut Liqueur"
+      ],
+      "profile": ["Woody", "Rich", "Warm", "Refined"],
+      "description": "A mock-up cask-inspired serve of oak-aged rum and cognac, rounded by maple, walnut and orange bitters.",
+      "glass": "Nick & Nora",
+      "garnish": "Expressed orange oil",
+      "serve": "Stirred, served up"
+    },
+    {
+      "id": "ruby-agave",
+      "name": "RUBY AGAVE",
+      "image": "RUBY AGAVE.jpeg",
+      "ingredients": [
+        "Reposado Tequila",
+        "Hibiscus",
+        "Agave",
+        "Ruby Grapefruit",
+        "Lime",
+        "Pink Peppercorn"
+      ],
+      "profile": ["Agave", "Floral", "Citrus", "Bold"],
+      "description": "A mock-up tequila signature of hibiscus and ruby grapefruit, rounded by agave and a pink-pepper warmth.",
+      "glass": "Rocks glass",
+      "garnish": "Grapefruit twist",
+      "serve": "Shaken, served over ice"
+    },
+    {
+      "id": "golden-ritual",
+      "name": "GOLDEN RITUAL",
+      "image": "GOLDEN RITUAL.jpeg",
+      "ingredients": [
+        "Cognac",
+        "Honey",
+        "Saffron",
+        "Lemon",
+        "Champagne"
+      ],
+      "profile": ["Golden", "Floral", "Bright", "Ceremonial"],
+      "description": "A mock-up ceremonial serve of cognac, honey and saffron, lifted by lemon and a champagne finish.",
+      "glass": "Coupe",
+      "garnish": "Edible gold leaf",
+      "serve": "Stirred, topped with champagne"
+    },
+    {
+      "id": "carthage-rose",
+      "name": "CARTHAGE ROSE",
+      "image": "CARTHAGE ROSE.jpeg",
+      "ingredients": [
+        "Gin",
+        "Rose Water",
+        "Pomegranate",
+        "Lemon",
+        "Orange Blossom"
+      ],
+      "profile": ["Floral", "Fruity", "Mediterranean", "Elegant"],
+      "description": "A mock-up Tunisian-inspired gin serve of rose, pomegranate and orange blossom — a contemporary nod to Carthage.",
+      "glass": "Nick & Nora",
+      "garnish": "Dried rose petal",
+      "serve": "Shaken, served up"
+    },
+    {
+      "id": "gilded-petal",
+      "name": "GILDED PETAL",
+      "image": "GILDED PETAL.jpeg",
+      "ingredients": [
+        "Vodka",
+        "Elderflower",
+        "White Peach",
+        "Lemon",
+        "Jasmine Tea"
+      ],
+      "profile": ["Floral", "Delicate", "Silky", "Bright"],
+      "description": "A mock-up petal-light composition of elderflower, white peach and jasmine, finished with a gilded edge.",
+      "glass": "Coupe",
+      "garnish": "Gilded edible flower",
+      "serve": "Shaken, fine-strained"
+    },
+    {
+      "id": "velvet-bloom",
+      "name": "VELVET BLOOM",
+      "image": "VELVET BLOOM.jpeg",
+      "ingredients": [
+        "Gin",
+        "Lychee",
+        "Vanilla",
+        "Rose",
+        "Lemon",
+        "Cream"
+      ],
+      "profile": ["Floral", "Creamy", "Velvety", "Soft"],
+      "description": "A mock-up silky serve of lychee, rose and vanilla, rounded with cream for a velvet finish.",
+      "glass": "Coupe",
+      "garnish": "Lychee & rose",
+      "serve": "Shaken with cream, served up"
+    },
+    {
+      "id": "crimson-veil",
+      "name": "CRIMSON VEIL",
+      "image": "CRIMSON VEIL.jpeg",
+      "ingredients": [
+        "Aged Rum",
+        "Blackberry",
+        "Cassis",
+        "Lemon",
+        "Amaro",
+        "Smoke"
+      ],
+      "profile": ["Berry", "Dark", "Rich", "Mysterious"],
+      "description": "A mock-up dark berry composition of blackberry, cassis and amaro, veiled in a hint of smoke.",
+      "glass": "Nick & Nora",
+      "garnish": "Blackberries",
+      "serve": "Stirred, served up"
     }
   ]
 }
